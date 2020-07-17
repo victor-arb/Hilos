@@ -31,4 +31,18 @@ Los hilos, threads o subprocesos no forman parte física del procesador, algo qu
 \setlength{\parindent}{31pt}
 En síntesis, las principales ventajas de la programación multihilo se dividen en la capacidad de respuesta, la compartición de recursos, la economía, y el correcto uso de la arquitectura de los procesadores o microprocesadores.
 
+\section*{¿Se puede hablar de la historia de los hilos?}
+
+\setlength{\parindent}{31pt}
+La noción de un hilo, como un flujo secuencial de control, se remonta a 1965 con el sistema operativo Berkeley Timesharing, aunque en ese momento fueron llamados procesos y no hilos e interactuaban a través de variables compartidas.
+
+\setlength{\parindent}{31pt}
+Se especula que el progenitor más importante de subprocesos es el lenguaje de programación PL / 1 en el período de 1965. El lenguaje definido por IBM proporcionó una TAREA CALL XXX (A, B) que bifurcó un hilo para XXX. Al final se decidió que la llamada TASK no se asignaba a los procesos, ya que no había protección entre los hilos de control y por lo tanto, Multics tomó una dirección diferente, eliminando la función TASK de PL / 1 junto con el atributo ABNORMAL presentados por IBM.
+
+\setlength{\parindent}{31pt}
+Luego vino Unix, a principios de la década de 1970. La noción de Unix de un "proceso" era en un sentido “pesado” ya que no podían compartir memoria interactuaban a través de tuberías, señales, etc, convirtiéndose así en un hilo de control secuencial más un espacio de direcciones virtuales. 
+
+\setlength{\parindent}{31pt}
+Después de un tiempo, se condujo a la "invención" de subprocesos: procesos de estilo antiguo que compartían el espacio de direcciones de un único proceso, los cuales fueron llamados "livianos", en contraste con los procesos "pesados" de Unix. Esta distinción se remonta a finales de los años setenta o principios de los ochenta, es decir, a los primeros "microkernels" (Thoth (precursor del V-kernel y QNX), Amoeba, Chorus, la familia RIG-Accent-Mach, etc.). También se resalta que los hilos han estado en uso continuo en aplicaciones de telecomunicaciones durante un gran periodo de tiempo.
+
 \end{document}\raggedright
