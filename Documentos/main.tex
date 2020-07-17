@@ -62,4 +62,13 @@ En las aplicaciones de hilos a nivel del kernel (KLT) pura, todo el trabajo para
 \setlength{\parindent}{31pt}
 Existe también el módulo KVM del tipo KLT, donde con el lenguaje de programación Java se proporciona una interfaz para que el programador acceda a las funciones nativas del kernel y lograr gestionar los hilos que puedan estar ejecutándose; siendo este modelo, independiente del hardware, potable e independiente del lenguaje Java.
 
+\setlength{\parindent}{31pt}
+En una aplicación de Hilos a nivel del usuario (ULT) pura, todo el trabajo de gestión de hilos es realizado por la aplicación, mientras el kernel no es consciente de la existencia de estos hilos. Esta aplicación es programable mediante la biblioteca de hilos, con sus operaciones llevadas a cabo en el espacio del usuario de un mismo proceso. 
+
+\setlength{\parindent}{31pt}
+Esta implementación toma ventaja en la medida que no necesita los privilegios del modo kernel, ya que las estructuras de datos están almacenadas en el espacio de direcciones de un mismo proceso evitando así una sobrecarga u overhead. También se pueden ejecutar en cualquier sistema operativo, teniendo en cuenta que la biblioteca de hilos es un conjunto compartido.
+
+\setlength{\parindent}{31pt}
+Por el contrario, hay una gran desventaja, en las estrategias ULT puras, una aplicación multihilo no puede aprovechar las opciones del hardware de los procesadores y se asigna un solo proceso a éstos, excluyendo la participación eficiente de los núcleos.
+
 \end{document}\raggedright
