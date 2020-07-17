@@ -1,0 +1,34 @@
+
+\documentclass[12pt, letter]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+%\usepackage{times},puede ser arial 
+\usepackage{csquotes}
+\usepackage[left=2.54cm, right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage[backend=biber,style=apa]{biblatex}
+\bibliography{Referencias.bib}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+
+\title{\huge{Hilos}}
+\author{Victor Manuel Arbeláez Ramírez \\ Facultad de ingeniería \\ Universidad de Antioquia}
+\date{}
+
+\begin{document}\raggedright
+
+\maketitle
+
+\section*{¿Qué es un hilo en el contexto de los microprocesadores?}
+
+\setlength{\parindent}{31pt}
+Un hilo, es un medio que administra el flujo de control de datos de un programa separado en múltiples tareas llevadas a cabo por el procesador o microprocesador y de sus diferentes núcleos de una forma más eficiente, debido a las unidades mínimas de asignación, que son las tareas o procesos de un programa; además, pueden dividirse en trozos para así optimizar los tiempos de espera de cada instrucción en la cola del proceso. Estos trozos en que se dividen, se llaman subprocesos o threads.
+
+\setlength{\parindent}{31pt}
+Los hilos, threads o subprocesos no forman parte física del procesador, algo que habitualmente es malinterpretado, los núcleos existen a nivel de hardware y los hilos a nivel de software, ayudando a los núcleos del microprocesador o procesador a ser mucho más eficaces llevando a cabo varias tareas al tiempo.
+
+\setlength{\parindent}{31pt}
+En síntesis, las principales ventajas de la programación multihilo se dividen en la capacidad de respuesta, la compartición de recursos, la economía, y el correcto uso de la arquitectura de los procesadores o microprocesadores.
+
+\end{document}\raggedright
